@@ -1,0 +1,282 @@
+@import "./header_footer.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centrar un div */
+.portafolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    font-family: "Sansita", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+    color: rgb(0, 64, 91);
+    font-size: 3.5vh;
+    padding: 0 0 15px 0;
+}
+
+
+p{
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+
+.titulo2{
+    color: rgb(234, 140, 27);
+ 
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 2% 0% 3% 0%;
+    font-size: 5vh;
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cuerpo{
+    width: 50%;      
+    margin: 0 auto; 
+    padding: 2em 0;
+}
+   
+
+  /* NOVEDADES */
+
+.contenedor{
+        width: 80%;
+}
+
+.novedad{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 68vh;   
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+}
+
+.novedad figure{
+    height: 68vh;
+    flex: 0 0 50%;
+    overflow: hidden;
+}
+
+.novedad figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.novedad .hover-galeria{
+    padding: 0% 5% 0% 5%;
+}
+
+.novedad .hover-galeria h3{
+    color: rgb(0, 64, 91);
+    font-size: 3.5vh;
+}
+
+.novedad .hover-galeria p{
+    font-size: 2.8vh;
+    text-align: justify;
+}
+
+/* BOTONES */
+
+.btn-central{
+    position: relative;
+    font-family: 'Calibri';
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 1s ease;
+    border-radius: 6px;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    color: white;
+    background: rgb(0, 64, 91);
+    font-weight: 500;
+}
+
+.btn-central:hover{
+    background: rgb(234, 140, 27);
+    color: rgb(0, 64, 91);
+    font-weight: 500;
+}
+
+.btn-portf{
+    position: relative;
+    font-family: 'Calibri';
+    display: inline-block;
+    padding: 7px 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 1s ease;
+    border-radius: 6px;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    font-weight: 500;
+}
+
+.btn-portf:hover{
+    background: rgb(234, 140, 27);
+    color: black;
+    font-weight: 300;
+}
+
+
+.espacio{
+    height: 20vh;
+}
+
+ .galeria-port{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    border-bottom: 1px solid gray;
+}
+
+.galeria-port figure{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.galeria-port figure:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    object-position: center;
+}
+
+.galeria-port figure:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    object-fit: cover;
+    object-position: 90%;
+}
+
+.galeria-port figure:nth-child(3) img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    object-fit: cover;
+    object-position: 65%;
+}
+
+
+
+.galeria-port figure .hover-galeria{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 64, 91, .8);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.galeria-port figure:hover > .hover-galeria{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.galeria-port figure .hover-galeria h3{
+    color: rgb(234, 140, 27);
+    margin-top: 0px;
+    transition: all 500ms ease-out;
+    margin-bottom: 120px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.galeria-port figure:hover > .hover-galeria h3{
+    margin-top: 35px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+
+.galeria-port figure .hover-galeria p{
+    color: white;
+    font-family: 'Calibri';
+    font-size: 17px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+/**** ESTILO IMAGEN EQUIPO DE TRABAJO ***/
+
+.h3_centrado{
+    text-align: center;
+}
+
+.miembros_equipo{
+    display: flex;
+    padding: 5% 0% 10% 0%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.miembro{
+    text-align: center;
+    max-width: 40%;
+    min-width: 25%; 
+}
+
+.miembro .descripcion{
+    font-family: "Belleza", sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.6;         
+}
+
+/* Estilo para el contenedor del marco */
+.marco-redondo {
+    display: inline-block; /* Hace que el contenedor tenga solo el tamaño de la imagen */
+    border: 5px solid rgb(234, 140, 27);; /* Color y grosor del marco */
+    border-radius: 50%; /* Hace que el marco sea redondo */
+    padding: 5px; /* Espaciado entre la imagen y el marco */
+}
+
+/* Estilo para la imagen dentro del contenedor */
+.marco-redondo img {
+    display: block; /* Quita el espacio debajo de la imagen */
+    width: 200px; /* Establece un tamaño fijo para la imagen */
+    height: 200px; /* Establece un tamaño fijo para la imagen */
+    border-radius: 50%; /* Hace que la imagen también sea redonda */
+}
+

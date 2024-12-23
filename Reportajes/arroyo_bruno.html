@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/estilos_investigacion.css">
+        <link rel="stylesheet" href="../css/carrusel.css">
+
+        <script src="https://kit.fontawesome.com/ba82ce2a37.js" crossorigin="anonymous"></script>   <!-- logos de redes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet"> <!-- fuente títulos -->
+        <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet"> <!-- fuente párrafos -->
+
+    </head>
+    <body>
+        
+      <header>
+        <div class="content">
+          <div class="logo">
+            <img src="../img/general/Logo VQT Blanco y Naranja.png" alt="">
+          </div>
+            
+          <nav>
+              <a href="../index.html">Inicio</a>
+              <div class="dropdown">
+                  <a href="#">Nuestras voces</a>
+                  <div class="dropdown-content">
+                      <a href="../Secciones/delatierra.html">Voces de la Tierra</a>
+                      <a href="../Secciones/quenoseapagan.html">Voces que no se apagan</a>
+                      <!-- <a href="#">Voces ausentes y presentes</a> -->
+                      <a href="../Secciones/enmovimiento.html">Voces en movimiento</a>
+                      <a href="../Secciones/artisticas.html">Voces artísticas</a>
+                      <!-- <a href="#">Voces cultas</a> -->
+                  </div>
+              </div>
+              <a href="#especiales">Especiales</a>            
+              <a href="../nosotros.html">Nosotros</a>
+              <!-- <a href="#apoyanos">Apoyanos</a> -->
+          </nav>
+        </div>  
+      </header>
+
+        <main>
+          <section class="contenido-investigacion" id="cont-invest">
+
+            <div class="intro">
+              <h2 class="titulo2">Arroyo Bruno</h2>  
+            </div>
+
+            <div class="cuerpo">
+                <p>
+                    Hace más de 5 años el pueblo Wayuu lleva denunciando el desvío del Arroyo Bruno por la empresa Carbones del Cerrejón, perteneciente a la multinacional Suiza Glencore.
+                </p>
+                <div class="carousel-container">
+                    <!-- Carrusel Principal -->
+                    <div class="carousel">
+                        <div class="carousel-item active">
+                            <img src="Material Arroyo Bruno/1.png">
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="Material Arroyo Bruno/2.png"> 
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="Material Arroyo Bruno/3.png"> 
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="Material Arroyo Bruno/4.png"> 
+                        </div>
+                        <div class="carousel-item">
+                            <video width="800" controls>
+                                <source src="Material Arroyo Bruno/Video 5.mp4" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="Material Arroyo Bruno/6.png"> 
+                        </div>
+                    </div>
+            
+                    <!-- Controles de navegación manual -->
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            
+                    <!-- Miniaturas -->
+                    <div class="thumbnails">
+                        <img src="Material Arroyo Bruno/1.png" onclick="currentSlide(1)">
+                        <img src="Material Arroyo Bruno/2.png" onclick="currentSlide(2)">
+                        <img src="Material Arroyo Bruno/3.png" onclick="currentSlide(3)">
+                        <img src="Material Arroyo Bruno/4.png" onclick="currentSlide(4)">
+                        <img src="Material Arroyo Bruno/5.png" onclick="currentSlide(5)">
+                        <img src="Material Arroyo Bruno/6.png" onclick="currentSlide(6)">
+                        
+                    </div>
+                </div> <!-- Cierra el carrousel container -->
+                <script src="../Scripts/script_carrusel.js"></script>
+
+            </div> <!-- Cierra el cuerpo -->  
+          </section>
+        </main>
+
+        <footer>
+          <section class="contenedor-footer" id="contact">
+            <!-- <h2 class="titulo2">Contáctame</h2> -->
+            <h1>
+            <div class="media-icons">
+              <a href="https://www.instagram.com/vocesquetrascienden/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+              <a href="https://whatsapp.com/channel/0029VadX3ALEKyZHUeEHu91l" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61553731120103" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+            </div>
+            </h1>
+          </section>
+          <h2 class="titulo-final">vocesqtrascienden@gmail.com</h2>
+          <br>  
+          <h2 class="titulo-final">&copy; Voces que Trascienden</h2>
+      </footer>
+
+    </body>
+</html>
+

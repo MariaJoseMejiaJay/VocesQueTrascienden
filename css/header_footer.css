@@ -1,0 +1,163 @@
+/* HEADER */
+
+header {
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 64, 91);
+    color: white;
+    justify-content: space-between;
+    padding: 1.5% 0px;
+    position: fixed; /* Hace que el header sea relativo al contenido */
+    top: 0; /* Se asegura de que esté en la parte superior */
+    z-index: 1000; /* Se asegura de que quede encima del contenido si es necesario */
+    width: 100%;
+}
+
+header .content{
+    width: 80%;
+    display: flex;
+}
+
+
+.logo {
+    width: 200px;
+    height: 50px; 
+    overflow: hidden; 
+    position: relative; 
+    background-color: rgb(0, 64, 91);
+
+}
+
+.logo img {
+    width: 100%; 
+    height: auto; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 64, 91);
+    padding: 1% 0%;
+    border-bottom: 0px solid gray;
+    align-items: flex-end;
+    margin: 0 0 0 auto; /*coloca el nav alineado a la derecha del contenedor padre */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 12px;
+    position: relative;
+    transition: color 0.3s;
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid rgb(234, 140, 27);
+}
+
+
+nav a:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(234, 140, 27);  /*Color del subrayado al hacer hover*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 64, 91);
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    align-items: flex-end;
+    padding: 0% 0% 10px 0%;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 24px 16px 0px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid rgb(234, 140, 27);
+  }
+
+
+/* MAIN */
+main {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu header */
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background:  rgb(0, 64, 91);
+    padding: 10px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.media-icons{
+    padding: 45px 0 45px 0;
+}
+
+
+.fa-whatsapp{
+    padding: 0px 35px 0px 35px;
+}
+
+.media-icons a{
+    color: white;
+}
+
+.titulo-final{
+    color: white;
+    font-family: 'Calibri';
+    font-size: 22px;
+}
+
+.contenedor-footer h1{
+    display: flex;
+    flex-direction: row;
+}
+  
+.contenedor-footer h1:before,
+.contenedor-footer h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1.8px solid white;
+    margin: 55px 45px 70px 45px;
+}
