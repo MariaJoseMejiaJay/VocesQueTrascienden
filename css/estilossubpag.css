@@ -224,3 +224,47 @@ p{
     color: black;
     font-weight: 300;
 }
+
+
+/* DISEÑO RESPONSIVE */
+
+/*Media Query para pantallas pequeñas tipo tablet */
+
+@media (max-width: 1300px) {
+    .contenedor{
+        width: 85%; 
+    }
+}
+
+
+/* Media Query para pantallas tipo celular  */
+@media (max-width: 768px) {
+
+    .contenedor{
+        width: 90%;
+    }
+    
+    .novedad{
+        flex-direction: column; /* Cambiar la disposición a columna */
+        height: auto; /* Ajustar la altura */
+    }
+
+    .novedad figure{
+        flex: 0 0 auto;
+        height: auto; /* Dejar que la imagen se ajuste al contenido */
+    }
+
+    .novedad .hover-galeria{
+        padding: 2rem;
+    }
+
+    .novedad .hover-galeria h3{
+        font-size: 4.5vh; /* Aumentar tamaño de texto en pantallas pequeñas */
+    }
+
+    .novedad .hover-galeria p{
+        font-size: 3vh; /* Aumentar el tamaño del texto */
+    }
+
+}
+

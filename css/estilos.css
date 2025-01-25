@@ -275,16 +275,30 @@ p{
 /* Estilo para la imagen dentro del contenedor */
 .marco-redondo img {
     display: block; /* Quita el espacio debajo de la imagen */
-    width: 200px; /* Establece un tamaño fijo para la imagen */
-    height: 200px; /* Establece un tamaño fijo para la imagen */
+    width: 200px; 
+    height: 200px; 
     border-radius: 50%; /* Hace que la imagen también sea redonda */
 }
 
 
 /* DISEÑO RESPONSIVE */
 
-/* Media Query para pantallas más altas que anchas (modo vertical) */
+/*Media Query para pantallas pequeñas tipo tablet */
+
+@media (max-width: 1300px) {
+    .contenedor{
+        width: 85%; 
+    }
+}
+
+
+/* Media Query para pantallas tipo celular  */
 @media (max-width: 768px) {
+
+    .contenedor{
+        width: 90%;
+    }
+
     .novedad{
         flex-direction: column; /* Cambiar la disposición a columna */
         height: auto; /* Ajustar la altura */
@@ -307,6 +321,36 @@ p{
         font-size: 3vh; /* Aumentar el tamaño del texto */
     }
 
+    .galeria-port {
+        flex-direction: column; /* Cambia la disposición a columna */
+        height: auto; 
+        align-items: center; 
+    }
+
+    .galeria-port figure {
+        max-width: 90%; /* La figura ocupa el 90% del ancho del contenedor */
+        height: 70vh; /* La figura ocupa el 80% del alto de la pantalla */
+        margin: 10px 0; /* Ajusta el margen entre las tarjetas */
+        position: relative; /* Para asegurar que las imágenes se posicionen bien */
+    }
+
+    /* Asegura que la imagen se ajuste a las nuevas dimensiones de la figura */
+    .galeria-port figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* La imagen se ajusta sin distorsionar, cubriendo el área */
+    }
+
+    .galeria-port figure .hover-galeria h3 {
+        font-size: 1.2em; /* TODO Ajusta el tamaño del título */
+        margin-bottom: 80px; 
+    }
+
+    .galeria-port figure .hover-galeria p {
+        font-size: 14px; /* TODO Ajusta el tamaño del texto */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
 }
 
