@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/estilos_investigacion.css">
         <link rel="stylesheet" href="../css/carrusel.css">
-
         <script src="https://kit.fontawesome.com/ba82ce2a37.js" crossorigin="anonymous"></script>   <!-- logos de redes -->
+        <script src="../Scripts/include-html.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet"> <!-- fuente títulos -->
@@ -13,31 +14,8 @@
     </head>
     <body>
         
-      <header>
-        <div class="content">
-          <div class="logo">
-            <img src="../img/general/Logo VQT Blanco y Naranja.png" alt="">
-          </div>
-            
-          <nav>
-              <a href="../index.html">Inicio</a>
-              <div class="dropdown">
-                  <a href="#">Nuestras voces</a>
-                  <div class="dropdown-content">
-                      <a href="../Secciones/delatierra.html">Voces de la Tierra</a>
-                      <a href="../Secciones/quenoseapagan.html">Voces que no se apagan</a>
-                      <!-- <a href="#">Voces ausentes y presentes</a> -->
-                      <a href="../Secciones/enmovimiento.html">Voces en movimiento</a>
-                      <a href="../Secciones/artisticas.html">Voces artísticas</a>
-                      <!-- <a href="#">Voces cultas</a> -->
-                  </div>
-              </div>
-              <a href="#especiales">Especiales</a>            
-              <a href="../nosotros.html">Nosotros</a>
-              <!-- <a href="#apoyanos">Apoyanos</a> -->
-          </nav>
-        </div>  
-      </header>
+      <!-- HEADER -->
+        <div include-html="../Partials/header.html"></div>
 
         <main>
           <section class="contenido-investigacion" id="cont-invest">
@@ -113,6 +91,12 @@
           <h2 class="titulo-final">&copy; Voces que Trascienden</h2>
       </footer>
 
+      <script>
+        includeHTML();
+      </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="../Scripts/menu.js"></script>  
+      
     </body>
 </html>
 
