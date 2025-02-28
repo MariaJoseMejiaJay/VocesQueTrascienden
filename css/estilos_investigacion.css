@@ -142,3 +142,26 @@ p.destacado{
     margin: 0;
 }
 
+/* DISEÑO RESPONSIVE */
+
+/*Media Query para pantallas pequeñas tipo tablet */
+@media (max-width: 1300px) {
+    .contenedor{
+        width: 85%; 
+    }
+}
+
+
+/* Media Query para pantallas tipo celular  */
+@media (max-width: 768px) {
+    .cuerpo{
+        width: 85%;
+    }
+
+    .contenido-investigacion .intro figure>img{
+        height: 65vh;
+        width: 100vw; /* FIXME arreglar porque no crece la imagen */
+        display: block; /* Asegura que la imagen se comporte como un bloque */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+}
