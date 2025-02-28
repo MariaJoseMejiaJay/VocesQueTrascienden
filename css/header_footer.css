@@ -13,11 +13,18 @@ header {
     top: 0; /* Se asegura de que esté en la parte superior */
     z-index: 1000; /* Se asegura de que quede encima del contenido si es necesario */
     width: 100%;
+    margin-left: 0;
 }
 
 header .content{
-    width: 80%;
+    width: 90%;
     display: flex;
+    
+}
+
+.menu_bar{
+	display: none;
+	font-family: "Sansita", sans-serif;
 }
 
 
@@ -43,7 +50,7 @@ header .content{
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 64, 91);
+    /* background-color: rgb(0, 64, 91); */
     padding: 1% 0%;
     border-bottom: 0px solid gray;
     align-items: flex-end;
@@ -160,4 +167,84 @@ footer{
     flex: 1 1;
     border-bottom: 1.8px solid white;
     margin: 55px 45px 70px 45px;
+}
+
+
+/* Media Query para pantallas tipo celular  */
+@media (max-width: 768px) {
+    /* Menú oculto por defecto */
+    header nav {
+        /* width: 38vw; */
+        min-height: 18vh;
+        margin: 0;
+        left: -100%;
+        position: fixed;
+        padding: 0;
+        margin-top: 7.2vh;
+        z-index: 3000;
+        background-color: rgb(0, 64, 91);
+        /*background-color: red;*/
+
+        transition: left 0.3s ease-in-out; /* Animación más fluida */
+    }
+
+    /* Clase que hace visible el menú */
+    header nav.visible {
+        left: 0;
+    }
+
+	#menu a{
+		display: block;
+		text-align: left;
+		font-size: 4vw;
+        padding-left: 5vw;
+        height: 5.5vh;
+	}
+
+
+    .menu_bar{
+        display: block;
+        width: 30%;
+        background: rgb(0, 64, 91);
+        z-index: 3000;
+        position: fixed;
+        padding-top: 2vh;
+    }
+
+    .menu_bar a{
+        color: white;
+        text-decoration: none;
+        font-size: 1vw;
+    }
+
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 0px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .logo{
+        margin: 0 0 0 auto; /*coloca el logo alineado a la derecha del contenedor padre */
+    }
+    
+    .dropdown-content{
+        width: 50vw;
+        /*background-color: green;*/
+        top: 0vh;
+        left: 32vw;
+        padding: 0% 0% 1vh 0%;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 1.2vh 16px 0px 16px;
+        text-decoration: none;
+        display: block;
+    }
 }
