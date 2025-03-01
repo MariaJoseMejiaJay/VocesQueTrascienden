@@ -19,6 +19,8 @@ h3{
     font-style: normal;
     color: rgb(0, 64, 91);
     font-size: 3.5vh;
+    /*font-size: 3.5vw;*/
+
     padding: 0 0 15px 0;
 }
 
@@ -306,14 +308,12 @@ p{
 @media (max-width: 768px) {
 
     .contenedor{
-        width: 90%;
+        width: 80%;
     }
 
     .cuerpo{
-        width: 90%;
+        width: 80%;
     }
-
-    /* AQUÍ ESTOY HACIENDO LOS CAMBIOS PARA LAS CARDS DE NOSOTROS TODO: ARREGLAR  */
 
     .miembros_equipo{
         display: flex;
@@ -342,7 +342,7 @@ p{
     }
 
     .novedad .hover-galeria h3{
-        font-size: 4.5vh; /* Aumentar tamaño de texto en pantallas pequeñas */
+        font-size: 4vh; /* Aumentar tamaño de texto en pantallas pequeñas */
     }
 
     .novedad .hover-galeria p{
@@ -356,7 +356,7 @@ p{
     }
 
     .galeria-port figure {
-        max-width: 90%; /* La figura ocupa el 90% del ancho del contenedor */
+        max-width: 100%; /* La figura ocupa el 90% del ancho del contenedor */
         height: 65vh; /* La figura ocupa el 65% del alto de la pantalla */
         margin: 10px 0; /* Ajusta el margen entre las tarjetas */
         position: relative; /* Para asegurar que las imágenes se posicionen bien */

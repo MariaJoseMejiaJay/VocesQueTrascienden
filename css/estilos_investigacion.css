@@ -155,12 +155,23 @@ p.destacado{
 /* Media Query para pantallas tipo celular  */
 @media (max-width: 768px) {
     .cuerpo{
-        width: 85%;
+        width: 75%;
+    }
+
+    .intro{
+        width: 75%;      
     }
 
     .contenido-investigacion .intro figure>img{
-        height: 65vh;
-        width: 100vw; /* FIXME arreglar porque no crece la imagen */
+        height: 40vh;
+        width: 100vw; 
+        display: block; /* Asegura que la imagen se comporte como un bloque */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+
+    .contenido-investigacion .intro .vertical>img{
+        height: 60vh;
+        width: 80vw; /* FIXME arreglar porque no crece la imagen */
         display: block; /* Asegura que la imagen se comporte como un bloque */
         margin: 0 auto; /* Centra la imagen horizontalmente */
     }

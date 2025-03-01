@@ -24,9 +24,10 @@
     display: none;
 }
 
+
 .carousel-item img {
     max-height: 100%;
-    width: auto;
+    width: 100%;
     margin-top: 2%;
 }
 
@@ -80,3 +81,26 @@ button.next {
     display: block;
     margin: 0 auto;
 }
+
+/* DISEÑO RESPONSIVE */
+
+/*Media Query para pantallas pequeñas tipo tablet */
+@media (max-width: 1300px) {
+
+    .carousel-container {
+        height: 60vh;
+    }
+    
+}
+
+
+/* Media Query para pantallas tipo celular  */
+@media (max-width: 768px) {
+
+    .carousel-container {
+        height: 60vh;
+    }
+    
+
+}
+
