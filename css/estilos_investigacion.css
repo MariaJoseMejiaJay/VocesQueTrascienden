@@ -142,6 +142,10 @@ p.destacado{
     margin: 0;
 }
 
+#portada_pesca_movil{
+    display: none;
+}
+
 /* DISEÑO RESPONSIVE */
 
 /*Media Query para pantallas pequeñas tipo tablet */
@@ -154,25 +158,59 @@ p.destacado{
 
 /* Media Query para pantallas tipo celular  */
 @media (max-width: 768px) {
+
+    .intro{
+        width: 78%;      
+    }
+
+    .titulo2{
+        font-size: 3.5vh;
+        font-weight: 500;
+        padding: 2% 0% 3% 0%;
+        line-height: 1.12;
+    }
+
     .cuerpo{
         width: 75%;
     }
 
-    .intro{
-        width: 75%;      
+    .cuerpo p{
+        line-height: 1.3;
     }
 
     .contenido-investigacion .intro figure>img{
-        height: 40vh;
+        height: 32vh;
         width: 100vw; 
-        display: block; /* Asegura que la imagen se comporte como un bloque */
-        margin: 0 auto; /* Centra la imagen horizontalmente */
+        display: block; 
+        margin: 0 auto;
     }
 
     .contenido-investigacion .intro .vertical>img{
-        height: 60vh;
-        width: 80vw; /* FIXME arreglar porque no crece la imagen */
-        display: block; /* Asegura que la imagen se comporte como un bloque */
-        margin: 0 auto; /* Centra la imagen horizontalmente */
+        height: 55vh;
+        width: 80vw; 
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    .cuerpo figure iframe{
+        height: 25vh;
+    }
+
+    .audio_spreaker{
+        height: 10vh;
+    }
+
+    p.destacado{
+        text-align: justify;
+        font-size: 3.5vh;
+        line-height: 1.12;
+    }
+
+    #portada_pesca_movil{
+        display: block;
+    }
+
+    #portada_pesca_pc{
+        display: none;
     }
 }

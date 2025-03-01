@@ -88,7 +88,7 @@ button.next {
 @media (max-width: 1300px) {
 
     .carousel-container {
-        height: 60vh;
+        height: 48vh;
     }
     
 }
@@ -98,7 +98,7 @@ button.next {
 @media (max-width: 768px) {
 
     .carousel-container {
-        height: 60vh;
+        height: 48vh;
     }
     
 

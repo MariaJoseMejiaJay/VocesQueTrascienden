@@ -34,7 +34,6 @@ header .content{
     overflow: hidden; 
     position: relative; 
     background-color: rgb(0, 64, 91);
-
 }
 
 .logo img {
@@ -44,7 +43,7 @@ header .content{
     top: 50%; 
     transform: translateY(-50%); 
     object-fit: cover; 
-    object-position: center; 
+    object-position: center;
 }
 
 nav {
@@ -229,8 +228,14 @@ footer{
         box-sizing: border-box;
     }
 
-    .logo{
+    .logo{  
         margin: 0 0 0 auto; /*coloca el logo alineado a la derecha del contenedor padre */
+        position: relative;
+    }
+
+    .logo img {
+        width: 70%;
+        right: 0;
     }
     
     .dropdown-content{

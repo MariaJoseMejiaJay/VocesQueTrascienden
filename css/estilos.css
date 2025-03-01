@@ -342,7 +342,8 @@ p{
     }
 
     .novedad .hover-galeria h3{
-        font-size: 4vh; /* Aumentar tamaño de texto en pantallas pequeñas */
+        font-size: 3.5vh;
+        line-height: 1.12;
     }
 
     .novedad .hover-galeria p{
