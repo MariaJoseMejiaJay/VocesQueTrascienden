@@ -17,7 +17,7 @@
 
 h3{
     font-family: "Sansita", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -25,6 +25,8 @@ p{
     font-family: "Belleza", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: justify;
+    font-size: 2.5vh;
 }
 
 .titulo2{
@@ -43,7 +45,7 @@ p{
   /* NOVEDADES */
 
  .contenedor{
-        width: 80%; 
+        width: 80%;
       }
 
 
@@ -239,10 +241,10 @@ p{
 
 /* Media Query para pantallas tipo celular  */
 @media (max-width: 768px) {
-
     .contenedor{
-        width: 90%;
+        width: 80%;
     }
+    
     
     .novedad{
         flex-direction: column; /* Cambiar la disposición a columna */
@@ -259,11 +261,26 @@ p{
     }
 
     .novedad .hover-galeria h3{
-        font-size: 4.5vh; /* Aumentar tamaño de texto en pantallas pequeñas */
+        font-size: 3.5vh;
+        line-height: 1.12;
     }
 
     .novedad .hover-galeria p{
-        font-size: 3vh; /* Aumentar el tamaño del texto */
+        font-size: 2.75vh; /* Aumentar el tamaño del texto */
+    }
+
+    .derecha{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .derecha .hover-galeria{
+        order: 2;
+    }
+
+    .derecha figure{
+        order: 1;
     }
 
 }

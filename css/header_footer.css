@@ -200,17 +200,15 @@ footer{
         height: 5.5vh;
 	}
 
-
-    .menu_bar{
-        display: block;
+    .menu_bar {
+        display: grid;
         width: 30%;
         background: rgb(0, 64, 91);
         z-index: 3000;
-        position: fixed;
-        padding-top: 2vh;
+        align-items: center;
     }
-
-    .menu_bar a{
+    
+    .menu_bar a {
         color: white;
         text-decoration: none;
         font-size: 1vw;
