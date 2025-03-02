@@ -192,6 +192,10 @@ p.destacado{
         margin: 0 auto; 
     }
 
+    .cuerpo figure{
+        width: 100%; 
+    }
+
     .cuerpo figure iframe{
         height: 25vh;
     }

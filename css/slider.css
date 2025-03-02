@@ -10,7 +10,7 @@ body {
 
 .slider-container {
     width: 100%;
-    height: 400px;
+    height: auto;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -107,4 +107,14 @@ input#slide2:checked ~ .indicators label[for="slide2"] {
 
 .indicator:hover {
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media (max-width: 1300px) {
+
+    .arrow {
+        width: 8vw;
+        height: 8vw;
+    }
+
 }

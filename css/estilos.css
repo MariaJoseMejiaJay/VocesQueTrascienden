@@ -95,7 +95,7 @@ p{
 
 .novedad .hover-galeria p{
     font-size: 2.8vh;
-    text-align: justify;
+    text-align: left;
 }
 
 /* BOTONES */
@@ -150,7 +150,7 @@ p{
 
 
 .espacio{
-    height: 20vh;
+    height: 10vh;
 }
 
  .galeria-port{
@@ -264,6 +264,11 @@ p{
     min-width: 25%;
 }
 
+.miembro h4{
+    font-family: "Sansita", sans-serif;
+    color: rgb(0, 64, 91);
+}
+
 .miembro .descripcion{
     font-family: "Belleza", sans-serif;
     font-weight: 350;
@@ -347,7 +352,7 @@ p{
     }
 
     .novedad .hover-galeria p{
-        font-size: 3vh; /* Aumentar el tamaño del texto */
+        font-size: 2.75vh; 
     }
 
     .galeria-port {

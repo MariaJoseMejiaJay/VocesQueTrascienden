@@ -21,12 +21,19 @@ h3{
     font-style: normal;
 }
 
+
 p{
+    font-family: "Belleza", sans-serif;
+    font-style: normal;   
+}
+
+
+.descripcion_sub_pag p{
     font-family: "Belleza", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align: justify;
-    font-size: 2.5vh;
+    text-align: center;
+    font-size: 3vh;
 }
 
 .titulo2{
@@ -87,7 +94,7 @@ p{
 
 .novedad .hover-galeria p{
     font-size: 2.8vh;
-    text-align: justify;
+    text-align: left;
 }
 
 .btn-central{
@@ -115,7 +122,7 @@ p{
 }
 
 .espacio{
-    height: 15vh;
+    height: 10vh;
 }
 
  .galeria-port{
@@ -245,6 +252,9 @@ p{
         width: 80%;
     }
     
+    .descripcion_sub_pag p{
+        font-size: 2.5vh;
+    }
     
     .novedad{
         flex-direction: column; /* Cambiar la disposición a columna */
