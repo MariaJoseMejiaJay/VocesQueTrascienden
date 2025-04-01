@@ -193,8 +193,7 @@ figure img.imagen-grande {
 @media (max-width: 768px) {
 
     .intro{
-        width: 90%;
-        background-color: yellow;      
+        width: 90%; 
     }
 
     .titulo2{
