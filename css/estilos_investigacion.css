@@ -83,7 +83,7 @@
 }
 
 .cuerpo a{
-    color: rgb(0, 64, 91);
+    color: rgb(234, 140, 27);
     font-style: none;
     text-decoration: none;
     font-family: "Belleza", sans-serif;
@@ -126,6 +126,10 @@ p.destacado{
     font-size: 4.5vh;
     font-style: normal;
     padding-inline: 5vw;
+}
+
+p.disclaimer{
+    font-weight: bold;
 }
 
 
@@ -189,15 +193,24 @@ figure img.imagen-grande {
 @media (max-width: 768px) {
 
     .intro{
-        width: 78%;      
+        width: 90%;
+        background-color: yellow;      
     }
 
     .titulo2{
-        font-size: 3.5vh;
+        font-size: 4vh;
         font-weight: 500;
         padding: 2% 0% 3% 0%;
-        line-height: 1.12;
+        line-height: 1.1;
+        text-align: left;
+        letter-spacing: 0.19rem;
     }
+
+    .intro .sumario{
+        line-height: 1.4;
+        font-size: 1.12rem;
+    }
+    
 
     .cuerpo{
         width: 75%;
@@ -208,7 +221,7 @@ figure img.imagen-grande {
     }
 
     .contenido-investigacion .intro figure>img{
-        height: 32vh;
+        height: 28vh;
         width: 100vw; 
         display: block; 
         margin: 0 auto;
