@@ -356,23 +356,33 @@ p{
     }
 
     .galeria-port {
+        display: flex;
         flex-direction: column; /* Cambia la disposición a columna */
         height: auto; 
         align-items: center; 
     }
 
     .galeria-port figure {
-        max-width: 100%; 
-        height: 65vh; /* 65% del alto de la pantalla */
-        margin: 10px 0; /* Ajusta el margen entre las tarjetas */
-        position: relative; /* Para asegurar que las imágenes se posicionen bien */
+        width: 100%; 
+        height: 65vh; 
+        overflow: hidden; /* Recortar el exceso */
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 10px 0;  /* Ajusta el margen entre las tarjetas */
+        position: relative;
     }
 
-    /* Asegura que la imagen se ajuste a las nuevas dimensiones de la figura */
     .galeria-port figure img {
-        width: 100%;
+        width: 100%;  
         height: 100%;
-        object-fit: cover; /* La imagen se ajusta sin distorsionar, cubriendo el área */
+        object-fit: cover; 
+        object-position: center; 
+    }
+
+    /* Si la imagen no es vertical, expándela */
+    .galeria-port figure:not(.vertical) img {
+        min-width: 200%; /* Agrandar la imagen para poder recortar */
     }
 
     .galeria-port figure .hover-galeria h3 {
