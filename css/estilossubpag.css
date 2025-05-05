@@ -97,6 +97,17 @@ p{
     text-align: left;
 }
 
+.derecha .hover-galeria,
+.izquierda figure {
+    order: 1;
+}
+
+.derecha figure,
+.izquierda .hover-galeria {
+    order: 2;
+}
+
+
 .btn-central{
     position: relative;
     font-family: 'Calibri';
