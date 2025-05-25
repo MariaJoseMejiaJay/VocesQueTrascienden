@@ -64,6 +64,11 @@ p{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
 }
 
+.novedad figure{
+    height: 68vh;
+    flex: 0 0 50%;
+    overflow: hidden;
+}
  
 .novedad .horizontal{
     height: 68vh;

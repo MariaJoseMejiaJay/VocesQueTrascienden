@@ -47,6 +47,14 @@
     padding: 0% 3% 4% 3%;
 }
 
+.contenido-investigacion .intro figure picture > img {
+  height: 80vh;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 .contenido-investigacion .intro figure>img{
     height: 80vh;
     width: auto; 
@@ -220,6 +228,13 @@ figure img.imagen-grande {
     }
 
     .contenido-investigacion .intro figure>img{
+        height: 28vh;
+        width: 100vw; 
+        display: block; 
+        margin: 0 auto;
+    }
+
+    .contenido-investigacion .intro figure picture > img{
         height: 28vh;
         width: 100vw; 
         display: block; 
