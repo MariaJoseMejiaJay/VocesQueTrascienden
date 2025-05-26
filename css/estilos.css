@@ -382,17 +382,17 @@ p{
     }
 
     .galeria-port figure .hover-galeria h3 {
-        font-size: 1.3em; /* TODO Ajusta el tamaño del título */
+        font-size: 1.3em; 
         margin-bottom: 80px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .galeria-port figure:hover > .hover-galeria h3{
-        margin-top: 60px;
+        margin-top: 15px;
     }
 
     .galeria-port figure .hover-galeria p {
-        font-size: 1.1em; /* TODO Ajusta el tamaño del texto */
+        font-size: 1.1em; 
     }
 
 }
