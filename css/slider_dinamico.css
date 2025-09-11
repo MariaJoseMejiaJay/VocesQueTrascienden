@@ -55,6 +55,7 @@ img { display: block; max-width: 100%; height: auto; }
     width: 100%;
     font-weight: bold;
     margin-top: 1em;
+    font-size: 1rem;
     font-family: "Belleza", sans-serif;
     text-align: center;
 } 
@@ -69,7 +70,7 @@ img { display: block; max-width: 100%; height: auto; }
   border-radius:50%;
   cursor:pointer;
   border:none;
-  z-index:9999;                          /* por encima de la pista */
+  z-index:99;                          /* por encima de la pista */
   display:flex; align-items:center; justify-content:center;
 }
 
@@ -93,7 +94,7 @@ img { display: block; max-width: 100%; height: auto; }
 .arrow.next:hover::before { border-left-color: rgba(0,0,0,0.3); }
 
 /* Asegura que la pista no tape las flechas */
-.track{ position:relative; z-index:0; }
+.track{ position:relative; z-index:0;}
 
 /* Indicadores */
 .indicators {
@@ -128,4 +129,30 @@ img { display: block; max-width: 100%; height: auto; }
     border-top-width: 6vw; 
     border-bottom-width: 6vw; 
   }
+
+  /* Estilo para galería alta */
+  .slider-tall .slide img {
+  width: 100%;        
+  height: 50vh;      
+  margin: 0 auto;    
+  object-fit: cover; /* cubre espacios con la imagen */
+}
+
+/* Estilo por defecto (ancho) */
+.slider-wide .slide img {
+  width: 100%;
+  height: 25vh;        /* más baja, panorámica */
+  object-fit: cover;
+}
+
+.arrow{
+  transform:translateY(-120%);
+}
+
+.arrow.prev::before{  border-right:18px solid white;  margin-left:-50px; }
+.arrow.next::before{  border-left:18px solid white;   margin-right:-50px; }
+
+.arrow.prev:hover::before { border-right-color: white; }
+.arrow.next:hover::before { border-left-color: white; }
+
 }
