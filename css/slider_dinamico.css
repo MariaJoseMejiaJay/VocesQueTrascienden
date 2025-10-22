@@ -60,13 +60,13 @@ img { display: block; max-width: 100%; height: auto; }
     text-align: center;
 } 
 
-/* Flechas tipo chevron elegantes */
+/* Flechas tipo chevron elegantes y responsive */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 70px;
-  height: 70px;
+  width: 6vw;      /* antes 70px */
+  height: 6vw;     /* antes 70px */
   background: transparent;
   border: none;
   cursor: pointer;
@@ -76,17 +76,25 @@ img { display: block; max-width: 100%; height: auto; }
   justify-content: center;
 }
 
-.arrow.prev { left: -10px; }
-.arrow.next { right: -10px; }
+/* límites para que no sean enormes en pantallas grandes ni minúsculas en móviles */
+@media (min-width: 1400px) {
+  .arrow { width: 80px; height: 80px; }
+}
+@media (max-width: 768px) {
+  .arrow { width: 10vw; height: 10vw; }
+}
+
+.arrow.prev { left: -1vw; }   /* antes -10px */
+.arrow.next { right: -1vw; }  /* antes -10px */
 
 /* Chevron con bordes — crea una “flecha hueca” */
 .arrow::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
-  border-top: 3px solid rgba(255, 255, 255, 0.5);
-  border-right: 3px solid rgba(255, 255, 255, 0.5);
+  width: 2.5vw;        /* antes 30px */
+  height: 2.5vw;       /* antes 30px */
+  border-top: 0.3vw solid rgba(255, 255, 255, 0.5);
+  border-right: 0.3vw solid rgba(255, 255, 255, 0.5);
   transform: rotate(45deg);
   transition: border-color 0.25s ease, transform 0.25s ease;
 }
@@ -131,7 +139,6 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 
-
 /* Asegura que la pista no tape las flechas */
 .track{ position:relative; z-index:0;}
 
@@ -156,42 +163,42 @@ img { display: block; max-width: 100%; height: auto; }
 .indicators button:hover { background: rgba(0,0,0,.5); }
 
 /* Responsive: flechas se escalan en pantallas pequeñas */
+/* Responsive: ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
-  .slide img { height: 50vh; }
-  .arrow.prev { 
-    border-right-width: 6vw; 
-    border-top-width: 6vw; 
-    border-bottom-width: 6vw; 
-  }
-  .arrow.next { 
-    border-left-width: 6vw; 
-    border-top-width: 6vw; 
-    border-bottom-width: 6vw; 
+
+  /* imágenes más bajas en móvil */
+  .slide img { 
+    height: 50vh; 
   }
 
-  /* Estilo para galería alta */
+  /* Ajuste de proporciones del slider alto/ancho */
   .slider-tall .slide img {
-  width: 100%;        
-  height: 50vh;      
-  margin: 0 auto;    
-  object-fit: cover; /* cubre espacios con la imagen */
-}
+    width: 100%;        
+    height: 50vh;      
+    margin: 0 auto;    
+    object-fit: cover;
+  }
 
-/* Estilo por defecto (ancho) */
-.slider-wide .slide img {
-  width: 100%;
-  height: 25vh;        /* más baja, panorámica */
-  object-fit: cover;
-}
+  .slider-wide .slide img {
+    width: 100%;
+    height: 25vh;        
+    object-fit: cover;
+  }
 
-.arrow{
-  transform:translateY(-120%);
-}
+  /* Flechas: más grandes y visibles en móvil */
+  .arrow {
+    width: 15vw;
+    height: 15vw;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.arrow.prev::before{  border-right:18px solid white;  margin-left:-50px; }
-.arrow.next::before{  border-left:18px solid white;   margin-right:-50px; }
+  .arrow::before {
+    width: 4vw;
+    height: 4vw;
+    border-width: 0.5vw;
+  }
 
-.arrow.prev:hover::before { border-right-color: white; }
-.arrow.next:hover::before { border-left-color: white; }
-
+  .arrow.prev { left: -2vw; }
+  .arrow.next { right: -2vw; }
 }
