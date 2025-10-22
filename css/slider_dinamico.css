@@ -60,38 +60,77 @@ img { display: block; max-width: 100%; height: auto; }
     text-align: center;
 } 
 
-/* Flechas visibles, con botón circular y triángulo interno */
-.arrow{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  width:56px; height:56px;              /* botón con tamaño real */
-  background:rgba(1,1,1,0);           /* disco de fondo para contraste */
-  border-radius:50%;
-  cursor:pointer;
-  border:none;
-  z-index:99;                          /* por encima de la pista */
-  display:flex; align-items:center; justify-content:center;
+/* Flechas tipo chevron elegantes */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.arrow.prev{ left:16px; }
-.arrow.next{ right:16px; }
+.arrow.prev { left: -10px; }
+.arrow.next { right: -10px; }
 
-/* Triángulo interior (la flecha) */
-.arrow.prev::before,
-.arrow.next::before{
-  content:"";
-  display:block;
-  width:0; height:0;
-  border-top:12px solid transparent;
-  border-bottom:12px solid transparent;
+/* Chevron con bordes — crea una “flecha hueca” */
+.arrow::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  border-right: 3px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(45deg);
+  transition: border-color 0.25s ease, transform 0.25s ease;
 }
-.arrow.prev::before{  border-right:18px solid gray;  margin-left:4px; }
-.arrow.next::before{  border-left:18px solid gray;   margin-right:4px; }
 
-/* Hover solo cambia el color, no márgenes */
-.arrow.prev:hover::before { border-right-color: rgba(0,0,0,0.3); }
-.arrow.next:hover::before { border-left-color: rgba(0,0,0,0.3); }
+/* Dirección izquierda */
+.arrow.prev::before {
+  transform: rotate(225deg);
+}
+
+/* Hover: se iluminan y crecen ligeramente */
+.arrow:hover::before {
+  border-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1) rotate(45deg);
+}
+
+.arrow.prev:hover::before {
+  transform: scale(1.1) rotate(225deg);
+}
+
+/* ===== Variación para fondos claros ===== */
+.arrow-light::before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.arrow-light:hover::before {
+  border-top-color: rgba(0, 0, 0, 0.85);
+  border-right-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Versión izquierda (mantiene rotación) */
+.arrow.prev.arrow-light::before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+  border-right-color: rgba(0, 0, 0, 0.5);
+  transform: rotate(225deg);
+}
+
+.arrow.prev.arrow-light:hover::before {
+  border-top-color: rgba(0, 0, 0, 0.85);
+  border-right-color: rgba(0, 0, 0, 0.85);
+  transform: scale(1.1) rotate(225deg);
+}
+
+
 
 /* Asegura que la pista no tape las flechas */
 .track{ position:relative; z-index:0;}

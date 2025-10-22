@@ -184,6 +184,21 @@ figure img.imagen-grande {
     margin: 0;
 }
 
+.divider {
+      display: flex;
+      justify-content: center; /* Centra los puntos horizontalmente */
+      align-items: center;
+      gap: 30px; /* Espacio entre los puntos */
+      margin: 40px 0; /* Margen superior e inferior */
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      background-color: black;
+      border-radius: 50%; /* Los hace circulares */
+    }
+
 #portada_pesca_movil{
     display: none;
 }
