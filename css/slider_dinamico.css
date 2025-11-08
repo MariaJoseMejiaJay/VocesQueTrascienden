@@ -6,7 +6,8 @@ img { display: block; max-width: 100%; height: auto; }
 .slider {
   position: relative;
   width: 100%;
-  overflow: hidden; /* ocultar overflow visual */
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 /* Estilo por defecto (ancho) */
@@ -19,7 +20,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* Estilo para galería alta */
 .slider-tall .slide img {
   width: 75%;        
-  height: 95vh;      
+  height: auto;      
   margin: 0 auto;    
   object-fit: cover; /* cubre espacios con la imagen */
 }
@@ -32,6 +33,7 @@ img { display: block; max-width: 100%; height: auto; }
   scroll-behavior: smooth;             /* animación suave al hacer scroll */
   -webkit-overflow-scrolling: touch;   /* iOS */
   scrollbar-width: none;               /* Firefox */
+  align-items: flex-start;  /* esto es una prueba */
 }
 .track::-webkit-scrollbar { display: none; } /* Chrome */
 
@@ -40,11 +42,14 @@ img { display: block; max-width: 100%; height: auto; }
   flex: 0 0 100%;
   scroll-snap-align: center;
   position: relative;
+  height: auto;
 }
+
 .slide img {
   width: 100%;
-  max-height: 60vh;        
-  object-fit: cover;   
+  height: auto; /* antes auto*/        
+  object-fit: cover;
+  aspect-ratio: auto;   
 }
 
 .slide p{
@@ -84,8 +89,8 @@ img { display: block; max-width: 100%; height: auto; }
   .arrow { width: 10vw; height: 10vw; }
 }
 
-.arrow.prev { left: -1vw; }   /* antes -10px */
-.arrow.next { right: -1vw; }  /* antes -10px */
+.arrow.prev { left: -0.5vw; }   /* antes -10px */
+.arrow.next { right: -0.5vw; }  /* antes -10px */
 
 /* Chevron con bordes — crea una “flecha hueca” */
 .arrow::before {
