@@ -5,7 +5,7 @@ header {
     align-items: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 64, 91);
+    background-color: #40560c;
     color: white;
     justify-content: space-between;
     padding: 1.5% 0px;
@@ -33,7 +33,7 @@ header .content{
     height: 50px; 
     overflow: hidden; 
     position: relative; 
-    background-color: rgb(0, 64, 91);
+    background-color: #40560c;
 }
 
 .logo img {
@@ -95,7 +95,7 @@ nav a:hover::after {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(0, 64, 91);
+    background-color: #40560c;
     min-width: 220px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
@@ -130,7 +130,7 @@ main {
 
 footer{
     text-align: center;
-    background:  rgb(0, 64, 91);
+    background:  #40560c;
     padding: 10px 0 30px 0;
     margin: auto;
     overflow: hidden;
@@ -174,14 +174,14 @@ footer{
     /* Menú oculto por defecto */
     header nav {
         /* width: 38vw; */
-        min-height: 18vh;
+        min-height: 14vh;
         margin: 0;
         left: -100%;
         position: fixed;
         padding: 0;
         margin-top: 7.2vh;
         z-index: 3000;
-        background-color: rgb(0, 64, 91);
+        background-color: #40560c;
         /*background-color: red;*/
 
         transition: left 0.3s ease-in-out; /* Animación más fluida */
@@ -200,15 +200,10 @@ footer{
         height: 5.5vh;
 	}
 
-    /* MAIN */
-    main {
-        padding-top: 61px; /* Ajusta este valor según la altura de tu header */
-    }
-
     .menu_bar {
         display: grid;
         width: 30%;
-        background: rgb(0, 64, 91);
+        background: #40560c;
         z-index: 3000;
         align-items: center;
     }
@@ -240,13 +235,11 @@ footer{
         width: 70%;
         right: 0;
     }
-    
+
     .dropdown-content{
+        top: 0;
+        left: 100%;
         width: 50vw;
-        /*background-color: green;*/
-        top: 0vh;
-        left: 32vw;
-        padding: 0% 0% 1vh 0%;
     }
 
     .dropdown-content a {
