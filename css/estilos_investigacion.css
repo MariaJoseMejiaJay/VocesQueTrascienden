@@ -225,7 +225,7 @@ figure img.imagen-grande {
         padding: 2% 0% 3% 0%;
         line-height: 1;
         text-align: left;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.07rem;
     }
 
     .intro .sumario{
@@ -243,14 +243,14 @@ figure img.imagen-grande {
     }
 
     .contenido-investigacion .intro figure>img{
-        height: 28vh;
+        height: auto;
         width: 100vw; 
         display: block; 
         margin: 0 auto;
     }
 
     .contenido-investigacion .intro figure picture > img{
-        height: 28vh;
+        height: auto;
         width: 100vw; 
         display: block; 
         margin: 0 auto;
